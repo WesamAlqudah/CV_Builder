@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/action_tellegram"
+    android:icon="@drawable/ic_telegram_icon"
+    android:title="Telegram"
+    app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_linkedIn"
+        android:icon="@drawable/ic_linkedin_icon_filled"
+        android:title="LinkedIn"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_whatsapp"
+        android:icon="@drawable/ic_whatsapp_icon"
+        android:title="Whatsapp"
+        />
+    <item
+        android:id="@+id/action_gmail"
+        android:icon="@drawable/ic_gmail_icon"
+        android:title="Gmail"
+        />
+
+</menu>

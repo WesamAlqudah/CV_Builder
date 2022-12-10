@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_comp_logo"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_item_job_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Job Title"
+        app:layout_constraintStart_toEndOf="@+id/img_comp_logo"
+        app:layout_constraintTop_toTopOf="@+id/img_comp_logo"
+        android:textSize="17sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_item_comp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_job_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_job_title" />
+
+    <TextView
+        android:id="@+id/tv_item_job_period_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apr 2000 - Present"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_comp_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_comp_title" />
+
+    <TextView
+        android:id="@+id/tv_item_job_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LA, USA"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_comp_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_job_period_data" />
+
+    <TextView
+        android:id="@+id/tv_item_job_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Developing flutter apps"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/img_comp_logo"
+        app:layout_constraintTop_toBottomOf="@+id/img_comp_logo" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="12dp"
+        android:background="#DCDCDC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_job_des" />
+</androidx.constraintlayout.widget.ConstraintLayout>

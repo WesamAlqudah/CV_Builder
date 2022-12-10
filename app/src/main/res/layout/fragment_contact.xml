@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ContactFragment"
+    android:paddingStart="@dimen/common_padding_start"
+    android:paddingEnd="@dimen/common_padding_end">
+
+    <TextView
+        android:id="@+id/tv_myContacts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="My Contacts"
+        style="@style/Theme.CVBuilder.CardTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_icon_mobile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_baseline_call_24"
+        app:layout_constraintStart_toStartOf="@+id/tv_myContacts"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myContacts" />
+
+    <TextView
+        android:id="@+id/tv_title_mobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_icon_mobile"
+        app:layout_constraintTop_toTopOf="@+id/img_icon_mobile"
+        tools:text="+2066375946" />
+    <TextView
+        android:id="@+id/tv_type_mobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_mobile"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_mobile"
+        android:text="Mobile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_icon_email"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_gmail_icon"
+        app:layout_constraintStart_toStartOf="@+id/img_icon_mobile"
+        app:layout_constraintTop_toBottomOf="@+id/img_icon_mobile" />
+
+    <TextView
+        android:id="@+id/tv_title_gmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_icon_email"
+        app:layout_constraintTop_toTopOf="@+id/img_icon_email"
+        tools:text="KareemAbuRejila@gmail.com" />
+    <TextView
+        android:id="@+id/tv_type_gmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_gmail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_gmail"
+        android:text="Gmail" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_icon_linkedIn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_linkedin_icon"
+        app:layout_constraintStart_toStartOf="@+id/img_icon_email"
+        app:layout_constraintTop_toBottomOf="@+id/img_icon_email" />
+
+    <TextView
+        android:id="@+id/tv_title_linkedIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_icon_linkedIn"
+        app:layout_constraintTop_toTopOf="@+id/img_icon_linkedIn"
+        tools:text="https://www.linkedin.com/in/kareem-aburejila/" />
+    <TextView
+        android:id="@+id/tv_type_linkedIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_linkedIn"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_linkedIn"
+        android:text="LinkedIn Website" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_icon_github"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_github_icon"
+        app:layout_constraintStart_toStartOf="@+id/img_icon_linkedIn"
+        app:layout_constraintTop_toBottomOf="@+id/img_icon_linkedIn" />
+
+    <TextView
+        android:id="@+id/tv_title_github"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_icon_github"
+        app:layout_constraintTop_toTopOf="@+id/img_icon_github"
+        tools:text="https://github.com/KareemAbuRejila" />
+    <TextView
+        android:id="@+id/tv_type_github"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_github"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_github"
+        android:text="GitHub" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_icon_resume"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_pdf_icon"
+        app:layout_constraintStart_toStartOf="@+id/img_icon_github"
+        app:layout_constraintTop_toBottomOf="@+id/img_icon_github" />
+
+    <TextView
+        android:id="@+id/tv_title_resume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_icon_resume"
+        app:layout_constraintTop_toTopOf="@+id/img_icon_resume"
+        tools:text="PDF" />
+    <TextView
+        android:id="@+id/tv_type_resume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_resume"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_resume"
+        android:text="Resume.pdf" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
